@@ -11,20 +11,21 @@ int main()
         printf("Enter 1 to addContact, 2 to getContact, 3 to getAllContacts, 4 to popContact, 5 to exit : " );
         int choice = 0;
         scanf("%d",&choice);
+        getchar();
         switch (choice) 
         {
             case 1:
                 addContact(name, numbers);
-                continue;
+                break;
             case 2:
                 getContact(name, numbers);
-                continue;
+                break;
             case 3:
                 getAllContacts(name, numbers);
-                continue;
+                break;
             case 4:
                 popContact(name, numbers);
-                continue;
+                break;
             case 5:
                exit(0);
             default:
