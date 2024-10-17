@@ -31,7 +31,7 @@ void getContact(char* contactName, char* contactNum)
 
     int nameIndex = 0;
     int numIndex = 0;
-    bool found = false;
+    bool found = false; 
 
     while (contactName[nameIndex] != '\0' && contactNum[numIndex] != '\0') 
     {
@@ -89,7 +89,7 @@ void getAllContacts(char* contactName, char* contactNum) {
         }
         printf("\n");
 
-        // saut au prochain '|'
+        // saut au prochain string
         nameIndex = nameEnd + 1;  
         numIndex = numEnd + 1;    
     }
