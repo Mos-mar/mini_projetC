@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-#include <ctype.h>
+#include <ctype.h> //isalpha et isdigit "abc" ou "123"
 
 #define ARRAY_SIZE 100
 void addContact(char* contactName, char* contactNum); //verification si il existe déjà

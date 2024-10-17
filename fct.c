@@ -96,7 +96,45 @@ void getAllContacts(char* contactName, char* contactNum) {
 }
 
 
-void popContact()
+void popContact(char* contactName, char* contactNum)
 {
+    char eraseName[50], eraseNum[50];
+    printf("Enter name to erase : ");
+    scanf(" %[^\n]", eraseName);
+    getchar();
+    printf("Enter number to erase : ");
+    scanf(" %[^\n]", eraseNum);
+    getchar();
 
+    char* nameStart = contactName;
+    char* numStart = contactNum;
+    bool found = false;
+
+    while (*nameStart != '\0' && *numStart != '\0')
+    {
+        char* nameEnd = strchr(nameStart, '|');
+        char* numEnd = strchr(numStart, '|');
+
+        if (nameEnd == NULL || numEnd == NULL) break; //notre \0 perso
+
+        int nameLen = nameEnd - nameStart;
+        int numLen = numEnd - numStart;
+
+        if (strncmp(nameStart, eraseName, nameLen) == 0 && strncmp(numStart, eraseNum, numLen) == 0)
+        {
+            // Contact trouvé, on le supprime
+            memmove(nameStart, nameEnd + 1, strlen(nameEnd));
+            memmove(numStart, numEnd + 1, strlen(numEnd));
+            found = true;
+            break;
+        }
+
+        nameStart = nameEnd + 1;
+        numStart = numEnd + 1;
+    }
+
+    if (found) printf("Contact successfully deleted.\n");
+    else printf("Contact not found.\n"); 
 }
+
+
