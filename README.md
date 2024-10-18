@@ -13,7 +13,6 @@ Fonctionnalités
 
 - Afficher tous les contacts.
 
-
+- Rechercher un contact.
 
 - Supprimer un contact.
-   
