@@ -4,6 +4,7 @@ int main()
 {
     char name[ARRAY_SIZE];
     char numbers[ARRAY_SIZE];
+    Contacts c1;
 
     //while pour choisir les fcts
     while(true)
@@ -14,16 +15,16 @@ int main()
         switch (choice) 
         {
             case 1:
-                addContact(name, numbers);
+                addContact(&c1);
                 break;
             case 2:
-                getContact(name, numbers);
+                getContact(&c1);
                 break;
             case 3:
-                getAllContacts(name, numbers);
+                getAllContacts(&c1);
                 break;
             case 4:
-                popContact(name, numbers);
+                popContact(&c1);
                 break;
             case 5:
                exit(0);

@@ -8,9 +8,15 @@
 #include <ctype.h> //isalpha et isdigit "abc" ou "123"
 
 #define ARRAY_SIZE 100
-void addContact(char* contactName, char* contactNum); //verification si il existe déjà
-void getContact(char* contactName, char* contactNum);
-void getAllContacts(char* contactName, char* contactNum);
+typedef struct  Contacts
+{
+    char Names[ARRAY_SIZE];
+    char Numbers[ARRAY_SIZE];
+}Contacts;
+
+void addContact(Contacts* c); //verification si il existe déjà
+void getContact(Contacts* c);
+void getAllContacts(Contacts* c);
 void popContact();
 
 #endif // fct_HPP
