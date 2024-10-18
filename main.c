@@ -2,7 +2,7 @@
 
 int main()
 {
-    Contacts c1;
+    Contacts c1 = {0};
 
     //while pour choisir les fcts
     while(true)
@@ -10,6 +10,7 @@ int main()
         printf("Enter 1 to addContact, 2 to getContact, 3 to getAllContacts, 4 to popContact, 5 to exit : " );
         int choice = 0;
         scanf("%d",&choice);
+        getchar();
         switch (choice) 
         {
             case 1:

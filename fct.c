@@ -96,7 +96,7 @@ void getAllContacts(Contacts* c) {
 }
 
 
-void popContact(char* contactName, char* contactNum)
+void popContact(Contacts* c)
 {
     char eraseName[50], eraseNum[50];
     printf("Enter name to erase : ");
@@ -106,8 +106,8 @@ void popContact(char* contactName, char* contactNum)
     scanf(" %[^\n]", eraseNum);
     getchar();
 
-    char* nameStart = contactName;
-    char* numStart = contactNum;
+    char* nameStart = c->Names;
+    char* numStart = c->Numbers;
     bool found = false;
 
     while (*nameStart != '\0' && *numStart != '\0')
