@@ -1,7 +1,7 @@
 # Contact Manager
 
 
-This project is a simple contact manager in C.
+This project is a simple contact manager in C.(with the constraint of not using struct)
 
 
 ## Features:
