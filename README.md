@@ -1,17 +1,16 @@
-# Gestionnaire de Contacts
+# Contact Manager
 
 
-Ce projet est un gestionnaire de contacts simple en C.
+This project is a simple contact manager in C.
 
 
-## Fonctionnalités
+## Features:
 
 
-- Ajouter un contact (nom, numéro de téléphone) avec vérification des doublons.
-    Rechercher un contact.
+- Add a contact (name, phone number) with duplicate checking.
 
-- Afficher tous les contacts.
+- Display all contacts.
 
-- Rechercher un contact.
+- Search for a contact.
 
-- Supprimer un contact.
+- Delete a contact.
