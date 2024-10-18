@@ -2,10 +2,9 @@
 
 
 Ce projet est un gestionnaire de contacts simple en C.
-Fonctionnalités
 
 
-## Roadmap
+## Fonctionnalités
 
 
 - Ajouter un contact (nom, numéro de téléphone) avec vérification des doublons.
