@@ -2,8 +2,6 @@
 
 int main()
 {
-    char name[ARRAY_SIZE];
-    char numbers[ARRAY_SIZE];
     Contacts c1;
 
     //while pour choisir les fcts
